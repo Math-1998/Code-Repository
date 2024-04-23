@@ -1,7 +1,7 @@
-# Flip Box
+# Template Animação
 
  **Descrição**  
-Caixa que possuí um botão que, ao clicar, ela vira e mostra o conteúdo.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper ut neque non pulvinar. Vivamus a dolor dolor. Pellentesque interdum condimentum quam. 
 
 ## HTML
 ```
@@ -9,12 +9,11 @@ Caixa que possuí um botão que, ao clicar, ela vira e mostra o conteúdo.
 <p>Exemplo de código embutido</p>
 </div>
 ```
-
 ## CSS
 ```
 div {background-color: #fff;}
 ```
-## Javascript
+## JavaScript
 ```
 const var document.querySelectorAll()
 ```
