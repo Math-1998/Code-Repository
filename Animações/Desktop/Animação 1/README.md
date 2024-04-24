@@ -6,7 +6,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper ut neque no
 ## HTML
 ```
 <div>
-<p>Exemplo de código embutido</p>
+    <p>Exemplo de código embutido</p>
 </div>
 ```
 ## CSS
