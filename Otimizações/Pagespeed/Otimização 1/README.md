@@ -17,3 +17,9 @@ div {background-color: #fff;}
 ```
 const var document.querySelectorAll()
 ```
+## PHP
+```
+function olaMundo(){
+    
+}
+```
