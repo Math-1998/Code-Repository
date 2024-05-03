@@ -1,4 +1,4 @@
-# Preload
+# Preload de recursos
 
  **Descrição**  
 O preload é uma forma de pré-carregamento de recursos como imagens, scripts, folhas de estilo e outros elementos que serão necessários para exibir o conteúdo da página. Esses recursos serão carregados primeiros, normalmente usamos essa técnicas nas imagens iniciais por questões de Pagespeed.
