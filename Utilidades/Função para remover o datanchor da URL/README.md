@@ -21,15 +21,7 @@ Essa função encurta a URL para que quando o usuário clique nos links do menu 
 			$('html,body').animate({
 				scrollTop: target
 			});
-		});
-
-		$('.home #menu-item-552').click(function(event) {
-			event.preventDefault();
-			var target = $('#sobre-home').offset().top;
-			$('html,body').animate({
-				scrollTop: target
-			});
-		});
+		});		
 	});
 </script>
 ```
