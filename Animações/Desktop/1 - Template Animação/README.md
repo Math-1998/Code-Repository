@@ -25,5 +25,5 @@ function olaMundo(){
 }
 ```
 ## Gif 
-O Arquivo precisa terminar com a extensão .gif
+O Arquivo precisa terminar com a extensão .gif 
 ![Animação](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
