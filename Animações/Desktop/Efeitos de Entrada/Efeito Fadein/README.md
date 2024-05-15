@@ -53,4 +53,4 @@
 ```
 ## Gif 
 
-![Animação](https://imgur.com/S4C97Td.gif](https://i.pinimg.com/originals/ed/59/b7/ed59b70b4585ffe4bbb30beb1a9c4091.gif))
+![Animação](https://imgur.com/S4C97Td.gif](https://i.pinimg.com/originals/ed/59/b7/ed59b70b4585ffe4bbb30beb1a9c4091.gif)
