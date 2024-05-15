@@ -1,4 +1,4 @@
-# Carrossel Automático
+# Estilos de Carrossel
 
  **Descrição**  
 
