@@ -55,6 +55,7 @@ Caixa com um titulo à esquerda e um botão de saiba mais à direita, ambos posi
 
 ```
 ## Gif 
+![chrome_cZEr7AHSd6](https://github.com/Math-1998/Code-Repository/assets/167233715/955d6af1-f2b2-4db4-b14b-0fc0924d28e1)
 
-![Animação](https://s10.gifyu.com/images/Sf07m.gif)
+
 
