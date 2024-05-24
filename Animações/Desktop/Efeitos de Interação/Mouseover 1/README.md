@@ -56,5 +56,5 @@ Caixa com um titulo à esquerda e um botão de saiba mais à direita, ambos posi
 ```
 ## Gif 
 
-![Animação](https://i.pinimg.com/originals/bb/b1/9d/bbb19ddc83af2b7af907433ad8b6c8a7.gif)
+![Animação](https://s12.gifyu.com/images/Sf07h.gif)
 
