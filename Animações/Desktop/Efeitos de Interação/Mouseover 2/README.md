@@ -26,6 +26,6 @@ Caixa que, ao passar o mouse, flutua para cima. (Podemos alterar a direção no 
 ```
 ## Gif 
 
-![Animação](https://i.pinimg.com/originals/93/1b/5e/931b5e4f1671c75a6ef1c8ffa0ea6b17.gif)
+![Animação](https://i.pinimg.com/originals/ed/59/b7/ed59b70b4585ffe4bbb30beb1a9c4091.gif)
 
 
