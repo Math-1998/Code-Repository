@@ -1,4 +1,4 @@
-# Carrossel Automático
+# Acordeão JQuery
 
  **Descrição**  
 Código para acordeão feito em JQuery, código menor e animação suave.
