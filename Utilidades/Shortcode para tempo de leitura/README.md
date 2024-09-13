@@ -39,4 +39,8 @@ function tt_reading_time_filter($content)
 	return $custom_content;
 }
 add_shortcode('reading_filter', 'tt_reading_time_filter');
+
+
+
+<?php echo do_shortcode('[reading_filter]'); ?>
 ```
