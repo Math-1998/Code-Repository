@@ -14,10 +14,10 @@ Esse código faz com que o CTA das páginas internas direcione o lead para o for
 ## JavaScript
 ```
 <script>
-    $(document).ready(function() {
-        $(".bt-post").click(function(e) {
+    jQuery(document).ready(function() {
+        jQuery(".bt-post").click(function(e) {
             e.preventDefault();
-            $('#modal_whatsapp').modal('show');
+            jQuery('#modal_whatsapp').modal('show');
         });
     });
 </script>
