@@ -1,19 +1,20 @@
-<?php get_header(); ?>
+<?php
+get_header();
+?>
 
 <div id="page-blog" class="py-5">
     <div class="container-lg">
         <div class="row">
             <article class="col-lg-8 mb-4 mb-lg-0">
-                <?php
-                if (have_posts()) {
-                    while (have_posts()) {
-                        the_post();
+                <?php 
+                if (have_posts()) :
+                    while (have_posts()) : the_post();
                         get_template_part('template-parts/content-blog');
-                    }
+                    endwhile;
                     RDTheme_Helper::pagination();
-                } else {
+                else:
                     get_template_part('template-parts/content', 'none');
-                }
+                endif; 
                 ?>
             </article>
 

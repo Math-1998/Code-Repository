@@ -11,17 +11,19 @@ get_header(); ?>
     <?php while (have_rows('banner')) : the_row();
         $img_banner = wp_is_mobile() ? esc_url(get_sub_field('imagem_mobile')) : esc_url(get_sub_field('imagem_desktop'));
     ?>
-        <section id="banner" style="background-image: url('<?= $img_banner; ?>');">
-
+        <section id="banner" style="background-image: url('<?= $img_banner; ?>');" data-no-lazy="1">
         </section>
     <?php endwhile; ?>
 
     <?php while (have_rows('sobre')) : the_row(); ?>
         <section id="sobre" class="py-5">
             <div class="container-lg">
+                <div class="area-bg_primary p-4">
                     <div class="row row-cols-1 row-cols-lg-2 align-items-center gy-4">
                         <div class="col">
-                        
+                            <h1 class="fs-3 mb-0"><?= wp_kses_post(get_sub_field('titulo')); ?></h1>
+                            <p class="font-3 color-white"><?= wp_kses_post(get_sub_field('subtitulo')); ?></p>
+
                             <?php the_content(); ?>
 
                             <div class="button-white text-center text-lg-start">
@@ -97,11 +99,11 @@ get_header(); ?>
                 <p class="text-center mb-5"><?= wp_kses_post(get_sub_field('texto')); ?></p>
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col text-center">
-                            <?= wp_get_attachment_image(get_sub_field('imagem_1'), 'medium', false, ['class' => 'img-fluid', 'alt' => '']); ?>
+                            <?= wp_get_attachment_image(get_sub_field('imagem_1'), 'medium', false, ['class' => 'img-fluid', 'alt' => 'Dra. Flávia Brasileiro']); ?>
                         <?php the_sub_field('texto_1'); ?>
                     </div>
                     <div class="col text-center">
-                        <?= wp_get_attachment_image(get_sub_field('imagem_2'), 'medium', false, ['class' => 'img-fluid', 'alt' => '']); ?>
+                        <?= wp_get_attachment_image(get_sub_field('imagem_2'), 'medium', false, ['class' => 'img-fluid', 'alt' => 'Dra. Juliana Saucedo Pontes']); ?>
                         <?php the_sub_field('texto_2'); ?>
                     </div>
                 </div>

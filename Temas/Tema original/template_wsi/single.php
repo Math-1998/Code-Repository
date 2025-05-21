@@ -1,6 +1,7 @@
 <?php
 get_header();
 
+$posts_type = get_post_type(get_the_ID());
 ?>
 
 <main id="single-posts" class="py-5">
@@ -13,7 +14,7 @@ get_header();
                 endwhile; 
                 ?>
             </article>
-            
+            <?php $posts_type == "tratamentos" ? get_sidebar('tratamentos') : get_sidebar(); ?>
         </div>
     </section>
 </main>

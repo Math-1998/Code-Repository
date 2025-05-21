@@ -29,41 +29,25 @@ if (!function_exists('rdtheme_enqueue_scripts')) {
         ";
 
         // Enfileira o CSS
-        $style_list = [
-            'font-awesome' => 'font-awesome.min.css',
-            'bootstrap-css' => 'bootstrap.min.css',
-            'swiper-css' => 'swiper-bundle.min.css',
-            'style-custom' => 'style.css'
-        ];
+        wp_enqueue_style('font-awesome',         RDTHEME_CSS_URL . 'font-awesome.min.css', array(), SEOENGINE_VERSION);
+        wp_enqueue_style('bootstrap-css',        RDTHEME_CSS_URL . 'bootstrap.min.css', array(), SEOENGINE_VERSION);
+        wp_enqueue_style('swiper-css',           RDTHEME_CSS_URL . 'swiper-bundle.min.css', array(), SEOENGINE_VERSION);
+        wp_enqueue_style('style-custom',         RDTHEME_CSS_URL . 'style.css', array(), SEOENGINE_VERSION);
 
-        foreach ($style_list as $style => $file) {
-            wp_enqueue_style($style, RDTHEME_CSS_URL . $file, array(), SEOENGINE_VERSION, 'all');
-        }
-
-        if (!empty($custom_css)) {
-            wp_add_inline_style('style-custom', $custom_css);
-        }
-
+        wp_add_inline_style('style-custom', $custom_css);
+        
         // Enfileira scripts JS
-        $script_list = [
-            'bootstrap-js' => 'bootstrap.min.js',
-            'custom' => 'custom.js',
-            'swiper-js' => 'swiper-bundle.min.js',
-            'swiper-custom' => 'swiper-custom.js',
-            'jquery-mask' => 'jquery.mask.min.js',
-            'jquery-meanmenu' => 'jquery.meanmenu.min.js',
-            'jquery-nav' => 'jquery.nav.min.js',
-            'seoengine-main' => 'main.js'
-        ];
-
-        foreach ($script_list as $script => $file) {
-            wp_enqueue_script($script, RDTHEME_JS_URL . $file, array('jquery'), SEOENGINE_VERSION, true);
-        }
-        
         wp_enqueue_script('jquery');
+        wp_enqueue_script('bootstrap-js',          RDTHEME_JS_URL . 'bootstrap.min.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('custom',                RDTHEME_JS_URL . 'custom.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('swiper-js',             RDTHEME_JS_URL . 'swiper-bundle.min.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('swiper-custom',         RDTHEME_JS_URL . 'swiper-custom.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('jquery-mask',           RDTHEME_JS_URL . 'jquery.mask.min.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('jquery-meanmenu',       RDTHEME_JS_URL . 'jquery.meanmenu.min.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('jquery-nav',            RDTHEME_JS_URL . 'jquery.nav.min.js', array('jquery'), SEOENGINE_VERSION, true);
+        wp_enqueue_script('seoengine-main',        RDTHEME_JS_URL . 'main.js', array('jquery'), SEOENGINE_VERSION, true);
         
-
-        $appendHtml = '';
+        $appendHtml = '';    
         $logo_black_mob = empty(RDTheme::$options['logo-footer']['url']) ? RDTHEME_IMG_URL . 'logo-dark.png' : RDTheme::$options['logo-footer']['url'];
         $url_header_mob = get_permalink(get_the_ID());
 

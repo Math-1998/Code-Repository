@@ -19,24 +19,26 @@ if (function_exists('is_woocommerce') && is_woocommerce()) {
 $GLOBALS["title"] = $rdtheme_title;
 ?>
 
-<div class="entry-banner py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <h1><?php echo wp_kses_post($rdtheme_title); ?></h1>
-            </div>
+<?php if (is_front_page() != 1): ?>
+    <div class="entry-banner py-4 <?php echo get_post_meta(get_the_ID(), 'bg_page', true) ?> ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1><?php echo wp_kses_post($rdtheme_title); ?></h1>
+                </div>
 
-            <div class="col-lg-4">
-                <div class="breadcrumb-area">
-                    <div class="entry-breadcrumb">
-                        <?php
-                        if (function_exists('yoast_breadcrumb')) {
-                            yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
-                        }
-                        ?>
+                <div class="col-lg-4">
+                    <div class="breadcrumb-area">
+                        <div class="entry-breadcrumb">
+                            <?php
+                            if (function_exists('yoast_breadcrumb')) {
+                                yoast_breadcrumb('<p id="breadcrumbs">', '</p>');
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>

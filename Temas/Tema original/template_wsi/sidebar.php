@@ -4,7 +4,7 @@ $menu_formatos = RDTheme_Helper::nav_formatos_menu_args();
 
 <aside class="col-lg-4">
     <div class="menu-sidebar mt-3 mb-4">
-        <h3>Posts relacionados:</h3>
+        <h3>Se informe sobre os cuidados com a saúde da mulher</h3>
         <?php echo do_shortcode('[Categorias_Relacionados posts_atual=""]'); ?>
     </div>
 
