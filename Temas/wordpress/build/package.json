@@ -1,0 +1,18 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/app.css -o ../wp-content/themes/wsi-blog/assets/css/app.css --watch",
+    "build": "tailwindcss -i ./src/css/app.css -o ../wp-content/themes/wsi-blog/assets/css/app.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "3.3.5",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.16"
+  }
+}

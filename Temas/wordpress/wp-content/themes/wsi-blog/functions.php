@@ -31,9 +31,9 @@ function wsi_blog_enqueue()
         wp_enqueue_style($handler, CSS_PATH . $file, [], '1.0.0', 'all');
     };
 
-    /* Enqueue Tailwind */
+    /* Enqueue Core CSS */
 
-    wp_enqueue_style( 'tailwind-core', DIST_PATH . 'style.css', [], filemtime(THEME_PATH . '/dist/style.css'), 'all' );
+    wp_enqueue_style( 'wsi-core', CSS_PATH . 'app.css', [], filemtime(THEME_PATH . '/assets/app.css'), 'all' );
 
     /* Enqueue scripts */
 
