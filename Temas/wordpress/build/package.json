@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/css/app.css -o ../wp-content/themes/wsi-blog/assets/css/app.css --watch",
-    "build": "tailwindcss -i ./src/css/app.css -o ../wp-content/themes/wsi-blog/assets/css/app.css --minify"
+    "dev": "tailwindcss -i ./src/input.css -o ../wp-content/themes/wsi-blog/assets/css/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ../wp-content/themes/wsi-blog/assets/css/output.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "3.3.5",
+    "autoprefixer": "^10.4.16",
     "postcss": "^8.4.24",
-    "autoprefixer": "^10.4.16"
+    "tailwindcss": "^4.1.8"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.8"
   }
 }
