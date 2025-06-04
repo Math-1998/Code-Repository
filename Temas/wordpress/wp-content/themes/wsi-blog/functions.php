@@ -7,27 +7,27 @@ if (!defined('ABSPATH')) {
  * Constants
  */
 
-define('THEME_URI', get_template_directory_uri());
+// Caminhos (uso interno no servidor)
 define('THEME_PATH', get_template_directory());
-define('ASSETS_PATH', THEME_URI . '/assets/');
-define('CSS_PATH', ASSETS_PATH . '/css/');
-define('JS_PATH', ASSETS_PATH . '/js/');
-define('IMG_PATH', ASSETS_PATH . '/img/');
-define('DIST_PATH', THEME_URI . '/dist/');
+define('INC_PATH', THEME_PATH . '/inc/');
 
-add_action('wp_enqueue_scripts', 'wsi_blog_enqueue');
-function wsi_blog_enqueue()
-{
+// URLs (uso para navegador)
+define('THEME_URI', get_template_directory_uri());
+define('ASSETS_URI', THEME_URI . '/assets');
+define('CSS_URI', ASSETS_URI . '/css');
+define('JS_URI', ASSETS_URI . '/js');
+define('IMG_URI', ASSETS_URI . '/img');
+define('DIST_URI', THEME_URI . '/dist');
 
-    /* Enqueue Core CSS */
+/**
+ *  Requires & Includes
+ */
+require_once INC_PATH . 'core/scripts.php';
+require_once INC_PATH . 'core/setup.php';
 
-    wp_enqueue_style( 'core-style', CSS_PATH . 'output.css', [], filemtime(THEME_PATH . '/assets/app.css'), 'all' );
-    wp_enqueue_style( 'swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@11.2.8/swiper-bundle.min.css', [], '11.2.8', 'all' );
-
-    /* Enqueue scripts */
-
-    wp_enqueue_script( 'swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11.2.8/swiper-bundle.min.js', [], '11.2.8', [
-        'strategy' => 'defer', 'in_footer' => true
-    ] );
-
-};
+class Tailwind_Nav_Walker extends Walker_Nav_Menu {
+    public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
+        $classes = 'text-gray-500 transition hover:text-gray-500/75';
+        $output .= '<li><a href="' . esc_url($item->url) . '" class="' . $classes . '">' . esc_html($item->title) . '</a></li>';
+    }
+}
