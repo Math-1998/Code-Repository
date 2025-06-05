@@ -1,11 +1,13 @@
 # Shortcode para vídeos com ACF
 
  **Descrição**  
-Esse shortcode é pensado na inserção de vídeos indexáveis para o Google. O usuário precisa preencher os campos e retornará um modal com o vídeo, além do dado estruturado do vídeo em questão. É importante que a imagem esteja hospedada no próprio wordpress. TODO OS CAMPOS PRECISAM ESTAR EM TEXTO, CUIDADO PARA NÃO INSERIR LINKS!
+Esse shortcode é pensado na inserção de vídeos indexáveis para o Google. O usuário precisa preencher os campos e retornará um modal com o vídeo, além do dado estruturado do vídeo em questão. 
+
+**IMPORTANTE**: Cuidado para não inserir a url e no editor de blocos ele realizar a inclusão de um link, tenha a certeza de que o shortcode está recebendo um texto. A thumbnail precisa estar hospedada no wordpress do site
 
 O campo data é opcional, caso não seja preenchido irá pegar o do Wordpress localmente
 
-Exemplo de uso:
+**EXEMPLO DE USO:**
 [index_video src="https://www.youtube.com/watch?v=4pB2IhK_zWo" img="http://theme.wsilab.com.br/wp-content/uploads/2025/05/Mask-group-1.png" title="Vídeo do youtube!" description="Vídeo educativo" upload_date="11/12/2025" duration="PT2M30S"]
 
 ## HTML
