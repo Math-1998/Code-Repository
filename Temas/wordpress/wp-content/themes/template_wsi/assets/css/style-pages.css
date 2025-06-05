@@ -1,0 +1,43 @@
+/* -- PÁGINA PROTOCOLOS -- */
+
+.light-box{background-color: var(--color-1);}
+.dark-box{background-color: var(--color-2);}
+.divider {height: 1px; background-color: var(--color-1);opacity: 1; margin: 0 auto; width: 100%;}
+
+#page-protocolos h3 {color: #fff; font-weight: bold;}
+#page-protocolos figure {width: fit-content;}
+
+@media (min-width: 992px) {
+    .justify-end {justify-self: end;}
+    .justify-start {justify-self: start;}
+
+    #page-protocolos .light-box {position: absolute; bottom: -20px; left: -30%;}
+    #page-protocolos .dark-box {position: absolute; bottom: -20px; right: -30%;}
+
+    #page-protocolos #secao-protocolos_2 .light-box {position: absolute; bottom: -20px; right: -30%; left: unset;}
+}
+
+/* -- PÁGINA TRATAMENTOS -- */
+
+#page-tratamentos h1::after {content: "";width: 2px;height: 100%;background-color: var(--color-1);position: absolute;left: 5%;}
+#page-tratamentos h1::before {content: "";width: 2px;height: 100%;background-color: var(--color-1);position: absolute;right: 5%;}
+
+@media (min-width: 992px) {
+    #page-tratamentos h1::after {content: "";width: 2px;height: 100%;background-color: var(--color-1);position: absolute;left: 30%;}
+    #page-tratamentos h1::before {content: "";width: 2px;height: 100%;background-color: var(--color-1);position: absolute;right: 30%;}
+}
+
+/* -- PÁGINA TRATAMENTOS INTERNAS -- */
+
+.subtitle {background-color: var(--color-1);margin: 0 auto;width: fit-content;padding: 1rem;color: #fff;border-radius: 8px;}
+.area-text h3 {color: var(--color-1); letter-spacing: 10px;}
+.area-text {position: relative;}
+.area-text::after {content: "";width: 2px;height: 100%;background-color: var(--color-1);position: absolute;left: -10px; top: 0;}
+
+.card-estetica {background-color: #DFDED8; border-radius: 48px; padding: 1rem 2rem; margin-top: 6rem;}
+.card-estetica h3 {color: var(--color-1); letter-spacing: 10px;}
+.card-estetica figure {margin-top: -6rem;}
+
+@media (min-width: 992px) {
+    .subtitle {padding: 1rem 10rem;}
+}

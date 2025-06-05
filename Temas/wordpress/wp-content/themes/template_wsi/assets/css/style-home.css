@@ -1,0 +1,25 @@
+.area-bg_primary {background-color: var(--color-1); border-radius: 30px;}
+.box-servicos {text-transform: uppercase; color: var(--color-1); padding: 10px 30px; border: 1px solid var(--color-2); border-radius: 10px;}
+.divider {height: 1px; background-color: var(--color-1);opacity: 1; margin: 0 auto; width: 80%;}
+
+#banner {height: 100vh; background-position: top center; background-size: cover; background-repeat: no-repeat;}
+#sobre {background-color: rgba(234, 234, 234, 0.54);}
+#sobre *:not(h1) {color: #fff;}
+
+
+#cta-1 {background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+#corpo-clinico h3 {color: var(--color-1); font-size: clamp(1rem, 2vw, 1.4rem); text-transform: none;}
+
+#clinica {background-image: url(https://flavia.wsilab.com.br/wp-content/uploads/2025/05/clinica-bg.jpg);background-position: center; background-size: cover; background-repeat: no-repeat;}
+#clinica figure img {object-fit: fill;width: 100%;height: 100%;max-height: 320px;}
+
+@media (max-width: 991.98px) {
+    #cta-1 {background-image: url(https://flavia.wsilab.com.br/wp-content/uploads/2025/05/cta-mobile.png);}
+}
+
+@media (min-width: 992px) {
+    .divider {width: 40%;}
+    #cta-1 {background-image: url(https://flavia.wsilab.com.br/wp-content/uploads/2025/05/cta-desktoop.png); background-size: contain;}
+	#sobre div img {margin-left: 6rem}
+}

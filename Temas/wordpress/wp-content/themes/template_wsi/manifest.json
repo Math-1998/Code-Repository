@@ -1,0 +1,15 @@
+{
+    "short_name": "",
+    "name": "",
+    "start_url": "",
+    "icons": [
+        {
+            "src": "",
+            "type": "image/png",
+            "sizes": "",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "",
+    "background_color": ""
+}

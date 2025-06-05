@@ -1,0 +1,30 @@
+<wpml-config>
+    <admin-texts>
+        <key name="seoengine">
+            <key name="phone" />
+            <key name="address" />
+            <key name="header_btn_txt" />
+            <key name="copyright_text" />
+            <key name="error_text1" />
+            <key name="error_text2" />
+            <key name="error_buttontext" />
+        </key>
+    </admin-texts>
+    <custom-types>
+        <custom-type translate="1">seo_case</custom-type>
+        <custom-type translate="1">seo_team</custom-type>
+        <custom-type translate="1">seo_portfolio</custom-type>
+        <custom-type translate="1">seo_testimonial</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">seo_case_category</taxonomy>
+        <taxonomy translate="1">seo_team_category</taxonomy>
+        <taxonomy translate="1">seo_portfolio_category</taxonomy>
+        <taxonomy translate="1">seo_testimonial_category</taxonomy>
+    </taxonomies>
+    <custom-fields>
+       <custom-field action="translate">seo_team_designation</custom-field>
+       <custom-field action="translate">seo_portfolio_fields</custom-field>
+       <custom-field action="translate">seo_tes_designation</custom-field>
+   </custom-fields>
+</wpml-config>
