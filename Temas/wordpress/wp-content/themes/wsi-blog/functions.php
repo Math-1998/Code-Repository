@@ -26,8 +26,16 @@ require_once INC_PATH . 'core/scripts.php';
 require_once INC_PATH . 'core/setup.php';
 
 class Tailwind_Nav_Walker extends Walker_Nav_Menu {
-    public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
-        $classes = 'text-gray-500 transition hover:text-gray-500/75';
-        $output .= '<li><a href="' . esc_url($item->url) . '" class="' . $classes . '">' . esc_html($item->title) . '</a></li>';
+    public function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
+        // Adiciona a classe no item (trabalha com filtros depois)
+        $item->classes[] = 'tailwind-link';
+        parent::start_el( $output, $item, $depth, $args, $id );
     }
 }
+add_filter( 'nav_menu_link_attributes', function( $atts, $item, $args, $depth ) {
+    if ( in_array( 'tailwind-link', (array) $item->classes ) ) {
+        $atts['class'] = 'text-gray-500 transition hover:text-gray-500/75';
+    }
+    return $atts;
+}, 10, 4 );
+
